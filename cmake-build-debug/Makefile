@@ -231,6 +231,33 @@ src/Directory.cpp.s:
 	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Directory.cpp.s
 .PHONY : src/Directory.cpp.s
 
+src/Environment.o: src/Environment.cpp.o
+
+.PHONY : src/Environment.o
+
+# target to build an object file
+src/Environment.cpp.o:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Environment.cpp.o
+.PHONY : src/Environment.cpp.o
+
+src/Environment.i: src/Environment.cpp.i
+
+.PHONY : src/Environment.i
+
+# target to preprocess a source file
+src/Environment.cpp.i:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Environment.cpp.i
+.PHONY : src/Environment.cpp.i
+
+src/Environment.s: src/Environment.cpp.s
+
+.PHONY : src/Environment.s
+
+# target to generate assembly for a file
+src/Environment.cpp.s:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Environment.cpp.s
+.PHONY : src/Environment.cpp.s
+
 src/FileSystem.o: src/FileSystem.cpp.o
 
 .PHONY : src/FileSystem.o
@@ -312,6 +339,33 @@ src/HistoryCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.s
 .PHONY : src/HistoryCommand.cpp.s
 
+src/Main.o: src/Main.cpp.o
+
+.PHONY : src/Main.o
+
+# target to build an object file
+src/Main.cpp.o:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Main.cpp.o
+.PHONY : src/Main.cpp.o
+
+src/Main.i: src/Main.cpp.i
+
+.PHONY : src/Main.i
+
+# target to preprocess a source file
+src/Main.cpp.i:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Main.cpp.i
+.PHONY : src/Main.cpp.i
+
+src/Main.s: src/Main.cpp.s
+
+.PHONY : src/Main.s
+
+# target to generate assembly for a file
+src/Main.cpp.s:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Main.cpp.s
+.PHONY : src/Main.cpp.s
+
 src/RmCommand.o: src/RmCommand.cpp.o
 
 .PHONY : src/RmCommand.o
@@ -338,6 +392,60 @@ src/RmCommand.s: src/RmCommand.cpp.s
 src/RmCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/RmCommand.cpp.s
 .PHONY : src/RmCommand.cpp.s
+
+src/Verbose.o: src/Verbose.cpp.o
+
+.PHONY : src/Verbose.o
+
+# target to build an object file
+src/Verbose.cpp.o:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Verbose.cpp.o
+.PHONY : src/Verbose.cpp.o
+
+src/Verbose.i: src/Verbose.cpp.i
+
+.PHONY : src/Verbose.i
+
+# target to preprocess a source file
+src/Verbose.cpp.i:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Verbose.cpp.i
+.PHONY : src/Verbose.cpp.i
+
+src/Verbose.s: src/Verbose.cpp.s
+
+.PHONY : src/Verbose.s
+
+# target to generate assembly for a file
+src/Verbose.cpp.s:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Verbose.cpp.s
+.PHONY : src/Verbose.cpp.s
+
+src/exeCommand.o: src/exeCommand.cpp.o
+
+.PHONY : src/exeCommand.o
+
+# target to build an object file
+src/exeCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/exeCommand.cpp.o
+.PHONY : src/exeCommand.cpp.o
+
+src/exeCommand.i: src/exeCommand.cpp.i
+
+.PHONY : src/exeCommand.i
+
+# target to preprocess a source file
+src/exeCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/exeCommand.cpp.i
+.PHONY : src/exeCommand.cpp.i
+
+src/exeCommand.s: src/exeCommand.cpp.s
+
+.PHONY : src/exeCommand.s
+
+# target to generate assembly for a file
+src/exeCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/exeCommand.cpp.s
+.PHONY : src/exeCommand.cpp.s
 
 src/generalFunctions.o: src/generalFunctions.cpp.o
 
@@ -393,33 +501,6 @@ src/rename.cpp.s:
 	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/rename.cpp.s
 .PHONY : src/rename.cpp.s
 
-src/testMain.o: src/testMain.cpp.o
-
-.PHONY : src/testMain.o
-
-# target to build an object file
-src/testMain.cpp.o:
-	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/testMain.cpp.o
-.PHONY : src/testMain.cpp.o
-
-src/testMain.i: src/testMain.cpp.i
-
-.PHONY : src/testMain.i
-
-# target to preprocess a source file
-src/testMain.cpp.i:
-	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/testMain.cpp.i
-.PHONY : src/testMain.cpp.i
-
-src/testMain.s: src/testMain.cpp.s
-
-.PHONY : src/testMain.s
-
-# target to generate assembly for a file
-src/testMain.cpp.s:
-	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/testMain.cpp.s
-.PHONY : src/testMain.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -441,6 +522,9 @@ help:
 	@echo "... src/Directory.o"
 	@echo "... src/Directory.i"
 	@echo "... src/Directory.s"
+	@echo "... src/Environment.o"
+	@echo "... src/Environment.i"
+	@echo "... src/Environment.s"
 	@echo "... src/FileSystem.o"
 	@echo "... src/FileSystem.i"
 	@echo "... src/FileSystem.s"
@@ -450,18 +534,24 @@ help:
 	@echo "... src/HistoryCommand.o"
 	@echo "... src/HistoryCommand.i"
 	@echo "... src/HistoryCommand.s"
+	@echo "... src/Main.o"
+	@echo "... src/Main.i"
+	@echo "... src/Main.s"
 	@echo "... src/RmCommand.o"
 	@echo "... src/RmCommand.i"
 	@echo "... src/RmCommand.s"
+	@echo "... src/Verbose.o"
+	@echo "... src/Verbose.i"
+	@echo "... src/Verbose.s"
+	@echo "... src/exeCommand.o"
+	@echo "... src/exeCommand.i"
+	@echo "... src/exeCommand.s"
 	@echo "... src/generalFunctions.o"
 	@echo "... src/generalFunctions.i"
 	@echo "... src/generalFunctions.s"
 	@echo "... src/rename.o"
 	@echo "... src/rename.i"
 	@echo "... src/rename.s"
-	@echo "... src/testMain.o"
-	@echo "... src/testMain.i"
-	@echo "... src/testMain.s"
 .PHONY : help
 
 

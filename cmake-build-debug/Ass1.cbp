@@ -114,6 +114,9 @@
 		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/Directory.cpp">
 			<Option target="Ass1"/>
 		</Unit>
+		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/Environment.cpp">
+			<Option target="Ass1"/>
+		</Unit>
 		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/FileSystem.cpp">
 			<Option target="Ass1"/>
 		</Unit>
@@ -123,16 +126,22 @@
 		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/HistoryCommand.cpp">
 			<Option target="Ass1"/>
 		</Unit>
+		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/Main.cpp">
+			<Option target="Ass1"/>
+		</Unit>
 		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/RmCommand.cpp">
+			<Option target="Ass1"/>
+		</Unit>
+		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/Verbose.cpp">
+			<Option target="Ass1"/>
+		</Unit>
+		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/exeCommand.cpp">
 			<Option target="Ass1"/>
 		</Unit>
 		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/generalFunctions.cpp">
 			<Option target="Ass1"/>
 		</Unit>
 		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/rename.cpp">
-			<Option target="Ass1"/>
-		</Unit>
-		<Unit filename="/home/amir/Desktop/eclipse/Ass1/src/testMain.cpp">
 			<Option target="Ass1"/>
 		</Unit>
 		<Unit filename="/home/amir/Desktop/eclipse/Ass1/CMakeLists.txt">

@@ -201,33 +201,57 @@ CMakeFiles/Ass1.dir/src/Commands.cpp.o.provides: CMakeFiles/Ass1.dir/src/Command
 CMakeFiles/Ass1.dir/src/Commands.cpp.o.provides.build: CMakeFiles/Ass1.dir/src/Commands.cpp.o
 
 
-CMakeFiles/Ass1.dir/src/testMain.cpp.o: CMakeFiles/Ass1.dir/flags.make
-CMakeFiles/Ass1.dir/src/testMain.cpp.o: ../src/testMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Ass1.dir/src/testMain.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass1.dir/src/testMain.cpp.o -c /home/amir/Desktop/eclipse/Ass1/src/testMain.cpp
+CMakeFiles/Ass1.dir/src/Main.cpp.o: CMakeFiles/Ass1.dir/flags.make
+CMakeFiles/Ass1.dir/src/Main.cpp.o: ../src/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Ass1.dir/src/Main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass1.dir/src/Main.cpp.o -c /home/amir/Desktop/eclipse/Ass1/src/Main.cpp
 
-CMakeFiles/Ass1.dir/src/testMain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ass1.dir/src/testMain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Desktop/eclipse/Ass1/src/testMain.cpp > CMakeFiles/Ass1.dir/src/testMain.cpp.i
+CMakeFiles/Ass1.dir/src/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ass1.dir/src/Main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Desktop/eclipse/Ass1/src/Main.cpp > CMakeFiles/Ass1.dir/src/Main.cpp.i
 
-CMakeFiles/Ass1.dir/src/testMain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ass1.dir/src/testMain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Desktop/eclipse/Ass1/src/testMain.cpp -o CMakeFiles/Ass1.dir/src/testMain.cpp.s
+CMakeFiles/Ass1.dir/src/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ass1.dir/src/Main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Desktop/eclipse/Ass1/src/Main.cpp -o CMakeFiles/Ass1.dir/src/Main.cpp.s
 
-CMakeFiles/Ass1.dir/src/testMain.cpp.o.requires:
+CMakeFiles/Ass1.dir/src/Main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Ass1.dir/src/testMain.cpp.o.requires
+.PHONY : CMakeFiles/Ass1.dir/src/Main.cpp.o.requires
 
-CMakeFiles/Ass1.dir/src/testMain.cpp.o.provides: CMakeFiles/Ass1.dir/src/testMain.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/testMain.cpp.o.provides.build
-.PHONY : CMakeFiles/Ass1.dir/src/testMain.cpp.o.provides
+CMakeFiles/Ass1.dir/src/Main.cpp.o.provides: CMakeFiles/Ass1.dir/src/Main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Main.cpp.o.provides.build
+.PHONY : CMakeFiles/Ass1.dir/src/Main.cpp.o.provides
 
-CMakeFiles/Ass1.dir/src/testMain.cpp.o.provides.build: CMakeFiles/Ass1.dir/src/testMain.cpp.o
+CMakeFiles/Ass1.dir/src/Main.cpp.o.provides.build: CMakeFiles/Ass1.dir/src/Main.cpp.o
+
+
+CMakeFiles/Ass1.dir/src/Environment.cpp.o: CMakeFiles/Ass1.dir/flags.make
+CMakeFiles/Ass1.dir/src/Environment.cpp.o: ../src/Environment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Ass1.dir/src/Environment.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass1.dir/src/Environment.cpp.o -c /home/amir/Desktop/eclipse/Ass1/src/Environment.cpp
+
+CMakeFiles/Ass1.dir/src/Environment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ass1.dir/src/Environment.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Desktop/eclipse/Ass1/src/Environment.cpp > CMakeFiles/Ass1.dir/src/Environment.cpp.i
+
+CMakeFiles/Ass1.dir/src/Environment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ass1.dir/src/Environment.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Desktop/eclipse/Ass1/src/Environment.cpp -o CMakeFiles/Ass1.dir/src/Environment.cpp.s
+
+CMakeFiles/Ass1.dir/src/Environment.cpp.o.requires:
+
+.PHONY : CMakeFiles/Ass1.dir/src/Environment.cpp.o.requires
+
+CMakeFiles/Ass1.dir/src/Environment.cpp.o.provides: CMakeFiles/Ass1.dir/src/Environment.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Environment.cpp.o.provides.build
+.PHONY : CMakeFiles/Ass1.dir/src/Environment.cpp.o.provides
+
+CMakeFiles/Ass1.dir/src/Environment.cpp.o.provides.build: CMakeFiles/Ass1.dir/src/Environment.cpp.o
 
 
 CMakeFiles/Ass1.dir/src/rename.cpp.o: CMakeFiles/Ass1.dir/flags.make
 CMakeFiles/Ass1.dir/src/rename.cpp.o: ../src/rename.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Ass1.dir/src/rename.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Ass1.dir/src/rename.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass1.dir/src/rename.cpp.o -c /home/amir/Desktop/eclipse/Ass1/src/rename.cpp
 
 CMakeFiles/Ass1.dir/src/rename.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/Ass1.dir/src/rename.cpp.o.provides.build: CMakeFiles/Ass1.dir/src/ren
 
 CMakeFiles/Ass1.dir/src/RmCommand.cpp.o: CMakeFiles/Ass1.dir/flags.make
 CMakeFiles/Ass1.dir/src/RmCommand.cpp.o: ../src/RmCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Ass1.dir/src/RmCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Ass1.dir/src/RmCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass1.dir/src/RmCommand.cpp.o -c /home/amir/Desktop/eclipse/Ass1/src/RmCommand.cpp
 
 CMakeFiles/Ass1.dir/src/RmCommand.cpp.i: cmake_force
@@ -275,7 +299,7 @@ CMakeFiles/Ass1.dir/src/RmCommand.cpp.o.provides.build: CMakeFiles/Ass1.dir/src/
 
 CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o: CMakeFiles/Ass1.dir/flags.make
 CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o: ../src/generalFunctions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o -c /home/amir/Desktop/eclipse/Ass1/src/generalFunctions.cpp
 
 CMakeFiles/Ass1.dir/src/generalFunctions.cpp.i: cmake_force
@@ -299,7 +323,7 @@ CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o.provides.build: CMakeFiles/Ass1.d
 
 CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o: CMakeFiles/Ass1.dir/flags.make
 CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o: ../src/HistoryCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o -c /home/amir/Desktop/eclipse/Ass1/src/HistoryCommand.cpp
 
 CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.i: cmake_force
@@ -321,6 +345,54 @@ CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o.provides: CMakeFiles/Ass1.dir/src/H
 CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o.provides.build: CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o
 
 
+CMakeFiles/Ass1.dir/src/Verbose.cpp.o: CMakeFiles/Ass1.dir/flags.make
+CMakeFiles/Ass1.dir/src/Verbose.cpp.o: ../src/Verbose.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Ass1.dir/src/Verbose.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass1.dir/src/Verbose.cpp.o -c /home/amir/Desktop/eclipse/Ass1/src/Verbose.cpp
+
+CMakeFiles/Ass1.dir/src/Verbose.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ass1.dir/src/Verbose.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Desktop/eclipse/Ass1/src/Verbose.cpp > CMakeFiles/Ass1.dir/src/Verbose.cpp.i
+
+CMakeFiles/Ass1.dir/src/Verbose.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ass1.dir/src/Verbose.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Desktop/eclipse/Ass1/src/Verbose.cpp -o CMakeFiles/Ass1.dir/src/Verbose.cpp.s
+
+CMakeFiles/Ass1.dir/src/Verbose.cpp.o.requires:
+
+.PHONY : CMakeFiles/Ass1.dir/src/Verbose.cpp.o.requires
+
+CMakeFiles/Ass1.dir/src/Verbose.cpp.o.provides: CMakeFiles/Ass1.dir/src/Verbose.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/Verbose.cpp.o.provides.build
+.PHONY : CMakeFiles/Ass1.dir/src/Verbose.cpp.o.provides
+
+CMakeFiles/Ass1.dir/src/Verbose.cpp.o.provides.build: CMakeFiles/Ass1.dir/src/Verbose.cpp.o
+
+
+CMakeFiles/Ass1.dir/src/exeCommand.cpp.o: CMakeFiles/Ass1.dir/flags.make
+CMakeFiles/Ass1.dir/src/exeCommand.cpp.o: ../src/exeCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Ass1.dir/src/exeCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ass1.dir/src/exeCommand.cpp.o -c /home/amir/Desktop/eclipse/Ass1/src/exeCommand.cpp
+
+CMakeFiles/Ass1.dir/src/exeCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ass1.dir/src/exeCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Desktop/eclipse/Ass1/src/exeCommand.cpp > CMakeFiles/Ass1.dir/src/exeCommand.cpp.i
+
+CMakeFiles/Ass1.dir/src/exeCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ass1.dir/src/exeCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Desktop/eclipse/Ass1/src/exeCommand.cpp -o CMakeFiles/Ass1.dir/src/exeCommand.cpp.s
+
+CMakeFiles/Ass1.dir/src/exeCommand.cpp.o.requires:
+
+.PHONY : CMakeFiles/Ass1.dir/src/exeCommand.cpp.o.requires
+
+CMakeFiles/Ass1.dir/src/exeCommand.cpp.o.provides: CMakeFiles/Ass1.dir/src/exeCommand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Ass1.dir/build.make CMakeFiles/Ass1.dir/src/exeCommand.cpp.o.provides.build
+.PHONY : CMakeFiles/Ass1.dir/src/exeCommand.cpp.o.provides
+
+CMakeFiles/Ass1.dir/src/exeCommand.cpp.o.provides.build: CMakeFiles/Ass1.dir/src/exeCommand.cpp.o
+
+
 # Object files for target Ass1
 Ass1_OBJECTS = \
 "CMakeFiles/Ass1.dir/src/BaseFile.cpp.o" \
@@ -329,11 +401,14 @@ Ass1_OBJECTS = \
 "CMakeFiles/Ass1.dir/src/FileSystem.cpp.o" \
 "CMakeFiles/Ass1.dir/src/BaseCommand.cpp.o" \
 "CMakeFiles/Ass1.dir/src/Commands.cpp.o" \
-"CMakeFiles/Ass1.dir/src/testMain.cpp.o" \
+"CMakeFiles/Ass1.dir/src/Main.cpp.o" \
+"CMakeFiles/Ass1.dir/src/Environment.cpp.o" \
 "CMakeFiles/Ass1.dir/src/rename.cpp.o" \
 "CMakeFiles/Ass1.dir/src/RmCommand.cpp.o" \
 "CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o" \
-"CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o"
+"CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o" \
+"CMakeFiles/Ass1.dir/src/Verbose.cpp.o" \
+"CMakeFiles/Ass1.dir/src/exeCommand.cpp.o"
 
 # External object files for target Ass1
 Ass1_EXTERNAL_OBJECTS =
@@ -344,14 +419,17 @@ Ass1: CMakeFiles/Ass1.dir/src/Files.cpp.o
 Ass1: CMakeFiles/Ass1.dir/src/FileSystem.cpp.o
 Ass1: CMakeFiles/Ass1.dir/src/BaseCommand.cpp.o
 Ass1: CMakeFiles/Ass1.dir/src/Commands.cpp.o
-Ass1: CMakeFiles/Ass1.dir/src/testMain.cpp.o
+Ass1: CMakeFiles/Ass1.dir/src/Main.cpp.o
+Ass1: CMakeFiles/Ass1.dir/src/Environment.cpp.o
 Ass1: CMakeFiles/Ass1.dir/src/rename.cpp.o
 Ass1: CMakeFiles/Ass1.dir/src/RmCommand.cpp.o
 Ass1: CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o
 Ass1: CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o
+Ass1: CMakeFiles/Ass1.dir/src/Verbose.cpp.o
+Ass1: CMakeFiles/Ass1.dir/src/exeCommand.cpp.o
 Ass1: CMakeFiles/Ass1.dir/build.make
 Ass1: CMakeFiles/Ass1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Ass1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amir/Desktop/eclipse/Ass1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Ass1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Ass1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -365,11 +443,14 @@ CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/Files.cpp.o.requires
 CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/FileSystem.cpp.o.requires
 CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/BaseCommand.cpp.o.requires
 CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/Commands.cpp.o.requires
-CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/testMain.cpp.o.requires
+CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/Main.cpp.o.requires
+CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/Environment.cpp.o.requires
 CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/rename.cpp.o.requires
 CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/RmCommand.cpp.o.requires
 CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o.requires
 CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o.requires
+CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/Verbose.cpp.o.requires
+CMakeFiles/Ass1.dir/requires: CMakeFiles/Ass1.dir/src/exeCommand.cpp.o.requires
 
 .PHONY : CMakeFiles/Ass1.dir/requires
 

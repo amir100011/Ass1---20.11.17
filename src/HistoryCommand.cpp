@@ -13,11 +13,9 @@ void HistoryCommand::execute(FileSystem & fs){
 
    // for(vector<BaseCommand*>::iterator it = history.begin(); it != history.end(); it++){
 
-    for (int i = 0; i < history.size() - 1; i++){
-        cout<< std::to_string(i) + "  " + (*history[i]).toString() + "\r\n" << std::endl;
+    for (int i = 0; i < history.size(); i++){
+        cout<< std::to_string(i) + "  " + (*history[i]).toString() + "\r" << std::endl;
     }
-    if ((*history[history.size()]).toString() != "history" )
-        cout<< std::to_string(history.size()) + "  " + (*history[history.size()]).toString() << std::endl;
 
 }
 

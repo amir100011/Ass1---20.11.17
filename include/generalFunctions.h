@@ -15,7 +15,7 @@ using namespace std;
 
 vector<std::string>* pathSplit(string path);
 
-void jumpToNewWorkingDirectory(FileSystem& fs, string path);
+Directory* jumpToNewWorkingDirectory(FileSystem& fs, string path);
 
 #endif //ASS1_GENERAL_FUNCTIONS_H
 

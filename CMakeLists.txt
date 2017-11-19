@@ -15,16 +15,16 @@ set(SOURCE_FILES
         src/FileSystem.cpp
         src/BaseCommand.cpp
         src/Commands.cpp
-        #src/Main.cpp
-        #src/Environment.cpp
-        src/testMain.cpp
+        src/Main.cpp
+        src/Environment.cpp
+        #src/testMain.cpp
         #src/FilesTest1.cpp
         #src/FilesTest2.cpp
         src/rename.cpp
         src/RmCommand.cpp
         "include/generalFunctions.h"
         "src/generalFunctions.cpp"
-        src/HistoryCommand.cpp)
+        src/HistoryCommand.cpp src/Verbose.cpp src/exeCommand.cpp)
 
 
 

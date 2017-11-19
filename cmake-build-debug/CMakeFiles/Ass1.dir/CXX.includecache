@@ -34,6 +34,8 @@ string
 vector
 -
 
+/home/amir/Desktop/eclipse/Ass1/include/GlobalVariables.h
+
 /home/amir/Desktop/eclipse/Ass1/include/generalFunctions.h
 string
 -
@@ -65,18 +67,30 @@ algorithm
 /home/amir/Desktop/eclipse/Ass1/src/Directory.cpp
 ../include/Files.h
 /home/amir/Desktop/eclipse/Ass1/include/Files.h
-../include/Files.h
-/home/amir/Desktop/eclipse/Ass1/include/Files.h
 string.h
 -
 algorithm
 -
 iostream
 /home/amir/Desktop/eclipse/Ass1/src/iostream
+../include/GlobalVariables.h
+/home/amir/Desktop/eclipse/Ass1/include/GlobalVariables.h
+
+/home/amir/Desktop/eclipse/Ass1/src/Environment.cpp
+../include/Environment.h
+/home/amir/Desktop/eclipse/Ass1/include/Environment.h
+iostream
+-
+../include/GlobalVariables.h
+/home/amir/Desktop/eclipse/Ass1/include/GlobalVariables.h
 
 /home/amir/Desktop/eclipse/Ass1/src/FileSystem.cpp
 ../include/FileSystem.h
 /home/amir/Desktop/eclipse/Ass1/include/FileSystem.h
+../include/GlobalVariables.h
+/home/amir/Desktop/eclipse/Ass1/include/GlobalVariables.h
+iostream
+-
 
 /home/amir/Desktop/eclipse/Ass1/src/Files.cpp
 ../include/Files.h
@@ -90,12 +104,30 @@ iostream
 algorithm
 -
 
+/home/amir/Desktop/eclipse/Ass1/src/Main.cpp
+../include/Environment.h
+/home/amir/Desktop/eclipse/Ass1/include/Environment.h
+
 /home/amir/Desktop/eclipse/Ass1/src/RmCommand.cpp
 iostream
 -
 ../include/Commands.h
 /home/amir/Desktop/eclipse/Ass1/include/Commands.h
 algorithm
+-
+
+/home/amir/Desktop/eclipse/Ass1/src/Verbose.cpp
+../include/Commands.h
+/home/amir/Desktop/eclipse/Ass1/include/Commands.h
+../include/GlobalVariables.h
+/home/amir/Desktop/eclipse/Ass1/include/GlobalVariables.h
+iostream
+-
+
+/home/amir/Desktop/eclipse/Ass1/src/exeCommand.cpp
+../include/Commands.h
+/home/amir/Desktop/eclipse/Ass1/include/Commands.h
+iostream
 -
 
 /home/amir/Desktop/eclipse/Ass1/src/generalFunctions.cpp
@@ -110,11 +142,5 @@ iostream
 ../include/Commands.h
 /home/amir/Desktop/eclipse/Ass1/include/Commands.h
 algorithm
--
-
-/home/amir/Desktop/eclipse/Ass1/src/testMain.cpp
-../include/Environment.h
-/home/amir/Desktop/eclipse/Ass1/include/Environment.h
-iostream
 -
 

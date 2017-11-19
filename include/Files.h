@@ -39,6 +39,8 @@ class Directory : public BaseFile {
 private:
 	vector<BaseFile*> children;
 	Directory *parent;
+    //Added functions
+    string getAbsolutePath(int i);//Return the path from the root to this
 
 public:
 	Directory(string name, Directory *parent); // Constructor
@@ -54,16 +56,19 @@ public:
 	string getAbsolutePath();  //Return the path from the root to this
 
     //added functions
-    string getAbsolutePath(int i);//Return the path from the root to this
 	virtual bool isDirectory(BaseFile* file);
 	int getChild(string child);//return the index of "child" in the children vector if doesn't exists returns -1
     Directory* getDirectory(string path);//Returns a pointer to a specipic sub-directory in this directory
 	virtual ~Directory();//destructor
 	Directory* pathValidation(vector<string>* name, int index);//checks if the path enterd exists and returns a pointer to the new working directory
+	void removePtr(BaseFile* file);//remove the pointer from the vector without removing the data from the heap
+	void ToCopy(BaseFile*);//creates deep copy of a file or directory that we need to copy
+	BaseFile* getChildModified(string child);//returns a pointer to last directory in path
+	bool checkSubTree(Directory* file, Directory* directoryToDelete);
 	Directory(const Directory& other);//copy constructor
     Directory& operator=(const Directory& other);//copy assignment operator
     Directory(Directory&& other);//move constructor
-    Directory& operator=(const Directory&& other);//move operator
+    Directory& operator=(Directory&& other);//move operator
 
 };
 
