@@ -137,7 +137,6 @@ Environment::~Environment(){//destructor
     }
         commandsHistory.~vector();
         commandsHistory.clear();
-        delete &fs;
 
         if (verbose==1 || verbose==3)
             cout << "~Environment()" << endl;

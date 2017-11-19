@@ -13,7 +13,7 @@
 
 using namespace std;
 
-vector<std::string>* pathSplit(string path);
+vector<std::string> pathSplit(string path);
 
 Directory* jumpToNewWorkingDirectory(FileSystem& fs, string path);
 

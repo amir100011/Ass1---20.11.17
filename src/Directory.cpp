@@ -328,21 +328,21 @@ void Directory::removePtr(BaseFile* file){
     }
 }
 
-Directory* Directory::pathValidation(vector<string>* name, int index) {//checks if the path enterd exists and returns a pointer to the new working directory
+Directory* Directory::pathValidation(vector<string> name, int index) {//checks if the path enterd exists and returns a pointer to the new working directory
 
     Directory* tmpFldr = this;
     bool valid = true;
-    string x = (*name)[index];
+    string x = (name)[index];
     string y = this->getName();
-    if (name->size() == 1){
+    if (name.size() == 1){
         return tmpFldr;
     }
-   else if((*name).size() == (unsigned int)(index + 1) && (*name)[index - 1 ] == (this->getName()))//current dir
+   else if(name.size() == (unsigned int)(index + 1) && (name)[index - 1 ] == (this->getName()))//current dir
         return tmpFldr;
-    else if ((*name).size() ==(unsigned int) (index + 1))//dir is not the current dir
+    else if ((name).size() ==(unsigned int) (index + 1))//dir is not the current dir
         return nullptr;
     else {
-        for (vector<string>::iterator it = (*name).begin() + index; it < (*name).end() && valid == true; it++) {//next subdriectory/subfile
+        for (vector<string>::iterator it = (name).begin() + index; it < (name).end() && valid == true; it++) {//next subdriectory/subfile
             string tmp = *it;
             int i = 0;
             for (vector<BaseFile*>::iterator itChildren = this->children.begin(); itChildren != this->children.end() && valid == true; itChildren++) {//TODO last elemnet comparison
