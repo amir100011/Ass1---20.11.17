@@ -14,6 +14,12 @@ RM := rm -rf
 -include cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/subdir.mk
 -include cmake-build-debug/CMakeFiles/subdir.mk
 -include bin/subdir.mk
+-include Ass1/src/subdir.mk
+-include Ass1/cmake-build-debug/CMakeFiles/Ass1.dir/src/subdir.mk
+-include Ass1/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/subdir.mk
+-include Ass1/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/subdir.mk
+-include Ass1/cmake-build-debug/CMakeFiles/subdir.mk
+-include Ass1/Debug/src/subdir.mk
 -include subdir.mk
 -include objects.mk
 

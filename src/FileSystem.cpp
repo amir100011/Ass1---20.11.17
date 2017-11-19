@@ -7,14 +7,7 @@
 #include <iostream>
 
 
-FileSystem::FileSystem(){//Initialize FileSystem
-
-    Directory root =  Directory("/", nullptr);
-
-    workingDirectory = nullptr;
-    rootDirectory = nullptr;
-
-}
+FileSystem::FileSystem():rootDirectory(), workingDirectory(){}//Initialize FileSystem
 
 Directory& FileSystem::getRootDirectory() const {// Return reference to the root directory
 
@@ -57,7 +50,7 @@ FileSystem& FileSystem::operator=(FileSystem &&other){
             cout << "FileSystem& operator=(FileSystem &&other)" << std::endl;
 
     }
-
+    return *this;
 }
 
 // Move Constructor
@@ -85,10 +78,10 @@ FileSystem& FileSystem::operator=(const FileSystem &other){//copy assignment
     return *this;
 }
 
-FileSystem::FileSystem(const FileSystem &other){// Copy Constructor
+FileSystem::FileSystem(const FileSystem &other):rootDirectory(),workingDirectory(){// Copy Constructor
 
     rootDirectory = new Directory(other.rootDirectory->getName(),other.rootDirectory->getParent());
-    for (int i = 0; i < other.rootDirectory->getChildren().size(); i++){
+    for (unsigned int i = 0; i < other.rootDirectory->getChildren().size(); i++){
         rootDirectory->ToCopy(other.rootDirectory->getChildren()[i]);
     }
     string path = other.workingDirectory->getAbsolutePath();

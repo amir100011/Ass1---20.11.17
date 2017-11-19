@@ -26,7 +26,7 @@ void RmCommand::execute(FileSystem & fs) {
                                      path.size());//last argument of the path + name to change to
         bool found = false;
         BaseFile *X = nullptr;
-        for (int i = 0; i < (*lastDir).getChildren().size(); i++) {
+        for (unsigned int i = 0; i < (*lastDir).getChildren().size(); i++) {
             X = (*lastDir).getChildren()[i];
             if (X->getName().compare(oldName) == 0) {
                 if (X->getName().compare(oldName) == 0) {
@@ -50,6 +50,9 @@ void RmCommand::execute(FileSystem & fs) {
                 cout << "File/Directory not found in specified path" << std::endl;
         //}
     }
+    else if (lastDir != nullptr)
+        cout << "File/Directory not found in specified path" << std::endl;
+
 }
 
 

@@ -15,8 +15,12 @@ vector<std::string>* pathSplit(string path){//general function returns pointer t
         if (path.substr(0, 2).compare("..") == 0) {
             if (content->size() > 0)
                 content->pop_back();
-            else
+            else {
+
+                content->~vector();
+                content = nullptr;
                 return nullptr;
+            }
             path = path.substr(found + 1, path.size());//jump over X/../something
             found = path.find("/");
         } else if (path.substr(0, 1).compare(".") == 0){
@@ -47,16 +51,20 @@ Directory* jumpToNewWorkingDirectory(FileSystem& fs, string path) {
             Directory *isValid = rootFolder->pathValidation(brokenPath, 0);
             if (isValid != nullptr) {
                 currentDir = isValid;//TODO change name of last expression in path is exists
+                brokenPath->~vector();
+                brokenPath = nullptr;
                 return currentDir;
             }else {
                 cout << "path is not valid" << endl;
+                brokenPath->~vector();
+                brokenPath = nullptr;
                 return nullptr;
             }
         } else if (path[0] == '.' && path[1] == '.' && path[2] == '/') {//go up to parent directory
             currentDir = ((*currentDir).getParent());//go to father worst case nullptr
             path = path.substr(3, path.size());//cutting the expression "../"
             if (currentDir == nullptr) {//changing root or above
-                cout << "trying to change folder that doesn't exist (above root)" << std::endl;
+                cout << "trying to change folder that doesn't exist (above root)" << std::endl;;
                 return currentDir;
             }
             else
@@ -75,14 +83,21 @@ Directory* jumpToNewWorkingDirectory(FileSystem& fs, string path) {
                 return currentDir;
             }
             vector<string> *brokenPath = pathSplit(path);
-            if (brokenPath == nullptr)
+            if (brokenPath == nullptr) {
+                brokenPath->~vector();
+                brokenPath = nullptr;
                 return nullptr;
+            }
             Directory *isValid = currentDir->pathValidation(brokenPath, 0);
             if (isValid != nullptr) {
                 currentDir = isValid;
+                brokenPath->~vector();
+                brokenPath = nullptr;
                 return currentDir;
             }else{
                 cout << "path is not valid" <<endl;
+                brokenPath->~vector();
+                brokenPath = nullptr;
                 return nullptr;
             }
         } else if (path[0] == '.' && path[1] == '/') {
@@ -94,9 +109,13 @@ Directory* jumpToNewWorkingDirectory(FileSystem& fs, string path) {
                 return nullptr;
             Directory *isValid = currentDir->pathValidation(brokenPath, 0);
             if (isValid != nullptr) {
+                brokenPath->~vector();
+                brokenPath = nullptr;
                 currentDir = isValid;
                 return currentDir;
             } else{
+                brokenPath->~vector();
+                brokenPath = nullptr;
                 cout << "path is not valid" <<endl;
                 return nullptr;
             }
@@ -106,6 +125,8 @@ Directory* jumpToNewWorkingDirectory(FileSystem& fs, string path) {
             if (brokenPath == nullptr)
                 return nullptr;
             Directory *isValid = currentDir->pathValidation(brokenPath, 0);
+            brokenPath->~vector();
+            brokenPath = nullptr;
             if (isValid != nullptr) {
                 currentDir = isValid;
                 return currentDir;

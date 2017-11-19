@@ -16,6 +16,8 @@ CPP_SRCS += \
 ../src/HistoryCommand.cpp \
 ../src/Main.cpp \
 ../src/RmCommand.cpp \
+../src/Verbose.cpp \
+../src/exeCommand.cpp \
 ../src/generalFunctions.cpp \
 ../src/rename.cpp \
 ../src/testMain.cpp 
@@ -33,6 +35,8 @@ OBJS += \
 ./src/HistoryCommand.o \
 ./src/Main.o \
 ./src/RmCommand.o \
+./src/Verbose.o \
+./src/exeCommand.o \
 ./src/generalFunctions.o \
 ./src/rename.o \
 ./src/testMain.o 
@@ -50,6 +54,8 @@ CPP_DEPS += \
 ./src/HistoryCommand.d \
 ./src/Main.d \
 ./src/RmCommand.d \
+./src/Verbose.d \
+./src/exeCommand.d \
 ./src/generalFunctions.d \
 ./src/rename.d \
 ./src/testMain.d 

@@ -14,7 +14,7 @@
 
 using namespace std;
 
-Directory::Directory(string name, Directory *parent) : BaseFile(name) , parent(parent){
+Directory::Directory(string name, Directory *parent) : BaseFile(name) , children() , parent(parent){
     if(verbose == 1 || verbose == 3)
         cout<< "Directory::Directory(string name, Directory *parent)"<<endl;
     if(parent != nullptr)
@@ -36,10 +36,10 @@ Directory::~Directory(){
 
 }
 
-Directory :: Directory(const Directory &other) :BaseFile(other.getName()) , parent(other.getParent()) {//copy constructor
+Directory :: Directory(const Directory &other) :BaseFile(other.getName()) , children(), parent(other.getParent()) {//copy constructor
     if(verbose == 1 || verbose == 3)
         cout<< "Directory :: Directory(const Directory &other)"<<endl;
-    for(int i = 0;i < other.children.size();i++)
+    for(unsigned int i = 0;i < other.children.size();i++)
         this->ToCopy(other.children[i]);
 }
 Directory& Directory:: operator=(const Directory& other) {//copy assignment operator
@@ -50,18 +50,18 @@ Directory& Directory:: operator=(const Directory& other) {//copy assignment oper
     if(this->getParent() != nullptr)
         this->getParent()->removePtr(this);//remove this directory from parent directory
     this->setParent(other.getParent());
-    for(int i = 0 ; i < this->children.size() ; i++)
+    for(unsigned int i = 0 ; i < this->children.size() ; i++)
         this->removeFile(children[i]);
     this->children.clear();//clearing the children vector.
-    for(int i = 0 ; i < other.children.size() ; i++)
+    for(unsigned int i = 0 ; i < other.children.size() ; i++)
         this->ToCopy(other.children[i]);//this deeps copy the new children to this directory
     return *this;
 
 }
-Directory ::Directory(Directory &&other):BaseFile(other.getName()) , parent(other.getParent()) {//move constructor
+Directory ::Directory(Directory &&other):BaseFile(other.getName()) , children(), parent(other.getParent())  {//move constructor
     if(verbose == 1 || verbose == 3)
         cout<< "Directory ::Directory(Directory &&other)"<<endl;
-    for (int i = 0; i < other.children.size(); i++)
+    for (unsigned int i = 0; i < other.children.size(); i++)
         this->children.push_back(other.children[i]);
     other.children.clear();//clears the other's children vector now this Directory stole this resource from him
     other.setName("");
@@ -69,17 +69,17 @@ Directory ::Directory(Directory &&other):BaseFile(other.getName()) , parent(othe
     other.setParent(nullptr);
     delete (&other);
 }
-Directory& Directory :: operator=(Directory&& other) {//move operator
+Directory& Directory :: operator=(Directory&& other){//move operator
     if(verbose == 1 || verbose == 3)
         cout<< "Directory& Directory :: operator=(Directory&& other)"<<endl;
     if(this != &other){
         this->setName(other.getName());
         this->getParent()->removePtr(this);
         this->setParent(other.getParent());
-        for(int i = 0 ; i < this->children.size() ; i++)
+        for(unsigned int i = 0 ; i < this->children.size() ; i++)
             this->removeFile(children[i]);
         this->children.clear();//clearing the children vector.
-        for(int i = 0 ; i < other.children.size() ; i++)
+        for(unsigned int i = 0 ; i < other.children.size() ; i++)
             this->children.push_back(other.children[i]);
         other.children.clear();//clear pointers
         other.getParent()->removePtr(&other);
@@ -122,9 +122,7 @@ void Directory::removeFile(string name) { // Remove the file with the specified 
 
     int numOfChildrenStart = this->getChildren().size();
     int numOfChildrenEnd;
-    int i; //vector start at index 1
-//TODO --if we have same name for a file and a directory which one to delete? currently we delete both
-    for (i = 0; i < children.size() + 1; i++) {
+    for (unsigned int i = 0; i < children.size() + 1; i++) {
 
         if (name.compare(children[i]->getName()) == 0) {//if the name are the same
             removeFile(children[i]);//remove by a pointer
@@ -138,21 +136,6 @@ void Directory::removeFile(string name) { // Remove the file with the specified 
 
 
 void Directory::removeFile(BaseFile* file) {// Remove the file from children
-
-
-    //TODO possible problem - the pointer doesn't belong to this directory but has same name like one of the directory's files
-
-    /* bool shouldDelete = false;
-     for (int i = 0; !shouldDelete && i < children.size(); i++) {
-         if ((file->isDirectory(file) && static_cast<Directory *>(children[i]) == static_cast<Directory *>(file))
-             || (static_cast<File *>(children[i]) == static_cast<File *>(file))) { shouldDelete = true; }
-         if (shouldDelete) {
-             children.erase(std::remove(children.begin(), children.end(), file), children.end());
-         }
-     }
-     if (!shouldDelete) {
-         cout << "File not found in current folder" << endl;
-     }*/
 
     vector<BaseFile*>::iterator it;
     for(it = children.begin(); it < children.end(); it++){
@@ -184,18 +167,7 @@ void Directory::sortBySize() { // Sort children by size (not recursively) if siz
                   else
                       return false;});
 }
-/*
-void Directory::sortByName() { // Sort children by name alphabetically (not recursively)
-    std::sort(children.begin(), children.end(),
-              [](const BaseFile* baseFileA, const BaseFile* baseFileB) {
-                  return (baseFileA->getName() < baseFileB->getName()); });
-}
-void Directory::sortBySize() { // Sort children by size (not recursively)
-    std::sort(children.begin(), children.end(),
-              [](BaseFile *baseFileA, BaseFile *baseFileB) {
-                  return (baseFileA->getSize() < baseFileB->getSize()); });
-}
-*/
+
 vector<BaseFile*> Directory::getChildren() { // Return children
 
     return children;
@@ -210,11 +182,6 @@ int Directory::getSize(){ // Return the size of the directory (recursively)
                  directorySize += baseFile->getSize(); });
 
     return directorySize;
-
-    //TODO-Better?
-    /*for(int i = 1; i < children.Size() + 1; i++){
-     * directorySize += children[i]->getSize();}*/
-
 }
 
 string Directory::getAbsolutePath() {//Return the path from the root to this
@@ -240,10 +207,9 @@ bool Directory::isDirectory(BaseFile* file){
 
 int Directory::getChild(string child){//return the index of "child" in the children vector if doesn't exists returns -1
     string temp;
-    unsigned int i = 1;
     if(children.size() == 0)
         return -1;
-    for(i = 0; i< children.size(); i++) {
+    for(unsigned int i = 0; i< children.size(); i++) {
         temp =children[i]->getName();
         if(!child.compare(temp)){
             if (children[i]->isDirectory(children[i])) {
@@ -260,7 +226,7 @@ BaseFile* Directory::getChildModified(string child){
     string temp;
     if(children.size() == 0 )
         return nullptr;
-    for(int i = 0 ; i< children.size() ; i++){
+    for(unsigned int i = 0 ; i< children.size() ; i++){
         temp = children[i]->getName();
         if(!child.compare(temp)){
             return children[i];
@@ -339,7 +305,7 @@ void Directory:: ToCopy(BaseFile* file){
     if(file->isDirectory(file)){//to be copied file is directory so we need to recursive copy everything in it
         CopyDir = new Directory(file->getName(),this);//ToDo why this and not file.getParent?
         vector <BaseFile*> CopyChildren = static_cast<Directory*>(file)->getChildren();
-        for(int i = 0 ; i < CopyChildren.size(); i++)
+        for(unsigned int i = 0 ; i < CopyChildren.size(); i++)
             CopyDir->ToCopy(CopyChildren[i]);
     }else{//file is just a file
         BaseFile* CopyFile = new File(file->getName(),file->getSize());
@@ -371,9 +337,9 @@ Directory* Directory::pathValidation(vector<string>* name, int index) {//checks 
     if (name->size() == 1){
         return tmpFldr;
     }
-   else if((*name).size() == index + 1 && (*name)[index - 1 ] == (this->getName()))//current dir
+   else if((*name).size() == (unsigned int)(index + 1) && (*name)[index - 1 ] == (this->getName()))//current dir
         return tmpFldr;
-    else if ((*name).size() == index + 1)//dir is not the current dir
+    else if ((*name).size() ==(unsigned int) (index + 1))//dir is not the current dir
         return nullptr;
     else {
         for (vector<string>::iterator it = (*name).begin() + index; it < (*name).end() && valid == true; it++) {//next subdriectory/subfile

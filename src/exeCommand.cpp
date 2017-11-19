@@ -15,7 +15,7 @@ void ExecCommand::execute(FileSystem &fs) {
         cout << "Command not found" << endl;
         return;
     }
-    if(B >= this->history.size()){
+    if((unsigned int) B >= this->history.size()){
         cout << "Command not found" << endl;
         return;
     }

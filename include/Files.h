@@ -59,7 +59,7 @@ public:
 	virtual bool isDirectory(BaseFile* file);
 	int getChild(string child);//return the index of "child" in the children vector if doesn't exists returns -1
     Directory* getDirectory(string path);//Returns a pointer to a specipic sub-directory in this directory
-	virtual ~Directory();//destructor
+	~Directory();//destructor
 	Directory* pathValidation(vector<string>* name, int index);//checks if the path enterd exists and returns a pointer to the new working directory
 	void removePtr(BaseFile* file);//remove the pointer from the vector without removing the data from the heap
 	void ToCopy(BaseFile*);//creates deep copy of a file or directory that we need to copy

@@ -27,14 +27,14 @@ void RenameCommand::execute(FileSystem & fs) {
                   bool foundWithSameName = false;
                   BaseFile *X = nullptr;
                   BaseFile *y = nullptr;
-                  for (int i = 0; i < (*lastDir).getChildren().size(); i++) {
+                  for (unsigned int i = 0; i < (*lastDir).getChildren().size(); i++) {
                       X = (*lastDir).getChildren()[i];
                       if (X->getName().compare(oldName) == 0) {
                           if (&(*X) == (&fs.getWorkingDirectory())) {
                               cout << "Can’t rename the working directory" << std::endl;
                               foundWithSameName = true;
                           }
-                          for (int j = 0;
+                          for (unsigned int j = 0;
                                j < (*lastDir).getChildren().size() && !foundWithSameName && !foundWithSameName; j++) {
                               y = (*lastDir).getChildren()[j];
                               if (y->getName().compare(newName) == 0) {
@@ -52,6 +52,8 @@ void RenameCommand::execute(FileSystem & fs) {
                   if (!found)
                       cout << "File/Directory not found in specified path" << std::endl;
               }
+    else if (lastDir != nullptr)
+              cout << "File/Directory not found in specified path" << std::endl;
           }
    // }
 string RenameCommand::toString(){

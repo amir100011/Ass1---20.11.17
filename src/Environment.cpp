@@ -8,10 +8,7 @@
 
 using namespace std;
 
-Environment::Environment(){
-
-    commandsHistory = *new vector<BaseCommand*>;
-    FileSystem fs;
+Environment::Environment(): commandsHistory(), fs(){
 
 }
 
@@ -31,6 +28,9 @@ void Environment::start(){//TODO send to command only paths --> delete the comma
         }
 
         input = input.substr(input.find_first_not_of(" "),input.find_last_not_of(" ") + 1);//space cutter
+
+        if(verbose >= 2)
+            cout << input << std::endl;
 
             if(!input.compare("pwd")) {
                 BaseCommand* pwd = new PwdCommand(input);
@@ -61,7 +61,6 @@ void Environment::start(){//TODO send to command only paths --> delete the comma
                 BaseCommand* mkfile = new MkfileCommand ((input.substr(7,input.size())));
                 mkfile->execute(fs);
                 addToHistory(mkfile);
-                this->addToHistory(mkfile);
                 input = "";
             }
             else if (!input.substr(0,input.find(" ")).compare("cp")){
@@ -107,14 +106,13 @@ void Environment::start(){//TODO send to command only paths --> delete the comma
                 addToHistory(exeCom);
 
             }
-            else {
+            else if (input != "exit"){
+                cout << input + "Unknown command" << std::endl;
                 BaseCommand* errorCmd = new ErrorCommand (input);
                 errorCmd->execute(fs);
                 addToHistory(errorCmd);
                 input = "";
             }
-
-
     }
 
 }
@@ -134,13 +132,15 @@ const vector<BaseCommand*>& Environment:: getHistory() const{
 }
 
 Environment::~Environment(){//destructor
-    for (int i = 0; i < commandsHistory.size(); i++) {
+    for (unsigned int i = 0; i < commandsHistory.size(); i++) {
         delete commandsHistory.at(i);
+    }
         commandsHistory.~vector();
+        commandsHistory.clear();
+        delete &fs;
 
         if (verbose==1 || verbose==3)
             cout << "~Environment()" << endl;
-    }
 }
 
 Environment::Environment(const Environment &other): commandsHistory(other.commandsHistory), fs(other.fs){

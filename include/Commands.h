@@ -12,7 +12,7 @@ private:
 	string args;
 
 public:
-	virtual ~BaseCommand() = default;
+	virtual ~BaseCommand();
 	BaseCommand(string args);
 	string getArgs();
 	virtual void execute(FileSystem & fs) = 0;

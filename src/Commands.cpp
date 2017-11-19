@@ -35,8 +35,14 @@ void MakeDir(string path,Directory* Point){//we can assume that path is a Relati
     string directory="";
     Directory *temp;
     if(loc == -1) {//create a directory in Point
-        BaseFile* newDir = new Directory(path,Point);
-        return;
+        if(Point->getChild(path) != -1) {
+            cout << "The directory already exists" << std::endl;
+            return;
+        }
+            Directory *newDir = new Directory(path, Point);
+            newDir = nullptr;
+            return;
+
     }else{///has intermediate fDIR
         directory = path.substr(0,loc);//now directory hold the name of the  intermediate  directory
         path = path.substr(loc+1,path.length());///now we have our next Dir objective
@@ -44,6 +50,7 @@ void MakeDir(string path,Directory* Point){//we can assume that path is a Relati
         if(temp == nullptr){// no such Dir exist
             BaseFile* newDir = new Directory(directory,Point);
             MakeDir(path ,static_cast<Directory*>(newDir));//next Recursive call
+            newDir = nullptr;
         }else//Directory exist
             MakeDir(path,temp);
     }
@@ -178,7 +185,7 @@ void MkfileCommand::execute(FileSystem &fs) {
             return;
         }
 
-        if(loc+1 == path.length())
+        if(loc+1 == (int) path.length())
             path =  path.substr(0,path.length() -1);
         else {
             Size = path.substr(loc + 1, path.length());
@@ -238,7 +245,7 @@ void CpCommand::execute(FileSystem &fs) {
             return;
         }
 
-        if (loc + 1 == path.length())
+        if (loc + 1 == (int) path.length())
             path = path.substr(0, path.length() - 1);
         else {
             Dest = path.substr(loc + 1, path.length());
@@ -321,7 +328,7 @@ void MvCommand::execute(FileSystem &fs) {
             return;
         }
 
-        if (loc + 1 == path.length())
+        if (loc + 1 == (int) path.length())
             path = path.substr(0, path.length() - 1);
         else {
             Dest = path.substr(loc + 1, path.length());
@@ -406,7 +413,7 @@ void ErrorCommand::execute(FileSystem &fs) {
     string A = this->getArgs();
     unsigned long first = A.find_first_not_of(" ",0);
     unsigned long  second =A.find_first_not_of(" ",first);
-    if(second != -1)
+    if((int)second != -1)
         A = A.substr(first,second);
     cout << A << endl;
 }

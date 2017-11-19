@@ -7,10 +7,9 @@
 
 BaseCommand::BaseCommand(string Args) :args(Args){}//BaseCommand Constructor
 
-/*BaseCommand::~BaseCommand(){//Destructor
-   // args.clear();
-    this->args = nullptr;
-}*/
+BaseCommand::~BaseCommand(){//Destructor
+
+}
 string BaseCommand::getArgs() {//returns string
     return this->args;
 }
