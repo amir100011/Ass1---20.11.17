@@ -12,68 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3349739b-dfef-4d8f-abff-f88edb0a60a1" name="Default" comment="no warnings">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Debug/src/Verbose.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Debug/src/exeCommand.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/BaseCommand.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/BaseFile.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Commands.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Directory.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Environment.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/FileSystem.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Files.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/HistoryCommand.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/RmCommand.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Verbose.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/exeCommand.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/fs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/generalFunctions.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/rename.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ass1/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Debug/src/Verbose.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Debug/src/exeCommand.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/BaseCommand.o" afterPath="$PROJECT_DIR$/Debug/src/BaseCommand.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/Commands.o" afterPath="$PROJECT_DIR$/Debug/src/Commands.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/Directory.o" afterPath="$PROJECT_DIR$/Debug/src/Directory.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/Environment.o" afterPath="$PROJECT_DIR$/Debug/src/Environment.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/FileSystem.o" afterPath="$PROJECT_DIR$/Debug/src/FileSystem.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/HistoryCommand.o" afterPath="$PROJECT_DIR$/Debug/src/HistoryCommand.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/Main.o" afterPath="$PROJECT_DIR$/Debug/src/Main.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/RmCommand.o" afterPath="$PROJECT_DIR$/Debug/src/RmCommand.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/generalFunctions.o" afterPath="$PROJECT_DIR$/Debug/src/generalFunctions.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/rename.o" afterPath="$PROJECT_DIR$/Debug/src/rename.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/testMain.o" afterPath="$PROJECT_DIR$/Debug/src/testMain.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Main.o" afterPath="$PROJECT_DIR$/bin/Main.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Ass1" afterPath="$PROJECT_DIR$/cmake-build-debug/Ass1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/BaseCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/BaseCommand.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Commands.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Commands.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Directory.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Directory.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Environment.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Environment.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/FileSystem.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/FileSystem.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/RmCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/RmCommand.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/rename.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/rename.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Commands.o" afterPath="$PROJECT_DIR$/bin/Commands.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/fs" afterPath="$PROJECT_DIR$/bin/fs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/.gitignore" afterPath="$PROJECT_DIR$/Debug/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/makefile" afterPath="$PROJECT_DIR$/Debug/makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/sources.mk" afterPath="$PROJECT_DIR$/Debug/sources.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/Directory.d" afterPath="$PROJECT_DIR$/Debug/src/Directory.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/Environment.d" afterPath="$PROJECT_DIR$/Debug/src/Environment.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/FileSystem.d" afterPath="$PROJECT_DIR$/Debug/src/FileSystem.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debug/src/subdir.mk" afterPath="$PROJECT_DIR$/Debug/src/subdir.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Commands.h" afterPath="$PROJECT_DIR$/include/Commands.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Files.h" afterPath="$PROJECT_DIR$/include/Files.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaseCommand.cpp" afterPath="$PROJECT_DIR$/src/BaseCommand.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Commands.cpp" afterPath="$PROJECT_DIR$/src/Commands.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Directory.cpp" afterPath="$PROJECT_DIR$/src/Directory.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Environment.cpp" afterPath="$PROJECT_DIR$/src/Environment.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FileSystem.cpp" afterPath="$PROJECT_DIR$/src/FileSystem.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HistoryCommand.cpp" afterPath="$PROJECT_DIR$/src/HistoryCommand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RmCommand.cpp" afterPath="$PROJECT_DIR$/src/RmCommand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/exeCommand.cpp" afterPath="$PROJECT_DIR$/src/exeCommand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generalFunctions.cpp" afterPath="$PROJECT_DIR$/src/generalFunctions.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rename.cpp" afterPath="$PROJECT_DIR$/src/rename.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,8 +40,8 @@
       <file leaf-file-name="Commands.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Commands.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="507">
+              <caret line="389" column="33" lean-forward="false" selection-start-line="389" selection-start-column="33" selection-end-line="389" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -299,7 +241,7 @@
       <workItem from="1510911637513" duration="4790000" />
       <workItem from="1510930491058" duration="36753000" />
       <workItem from="1511086341260" duration="20989000" />
-      <workItem from="1511110238189" duration="4189000" />
+      <workItem from="1511110238189" duration="4499000" />
     </task>
     <task id="LOCAL-00001" summary="Second ago">
       <created>1511100038144</created>
@@ -308,11 +250,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511100038144</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="no warnings">
+      <created>1511114452266</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511114452266</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197682000" />
+    <option name="totallyTimeSpent" value="197992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="69" y="-4" width="1297" height="780" extended-state="6" />
@@ -345,6 +294,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Second ago" />
     <MESSAGE value="no warnings" />
     <option name="LAST_COMMIT_MESSAGE" value="no warnings" />
@@ -611,7 +561,7 @@
         <state relative-caret-position="108">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#37#69#0" expanded="true" />
+            <element signature="e#37#69#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -780,8 +730,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Commands.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="507">
+          <caret line="389" column="33" lean-forward="false" selection-start-line="389" selection-start-column="33" selection-end-line="389" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -389,8 +389,10 @@ void MvCommand::execute(FileSystem &fs) {
     }else {//from relative folder file or dir in workingdirectory
         Source = &fs.getWorkingDirectory();
         temp = Source->getChildModified(path);
+    }   if(temp == nullptr) {
+        cout << "No such file or directory" << endl;
+        return;
     }
-
     if(temp->isDirectory(temp))
         static_cast<Directory *>(temp)->setParent(Destination);//need to update parent if Dir
 
