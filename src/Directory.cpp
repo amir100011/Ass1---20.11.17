@@ -28,7 +28,6 @@ Directory::~Directory(){
         for (vector<BaseFile *>::iterator it = children.begin(); it < children.end(); it++) {
             ptr = *it;
             delete (ptr);
-            cout << "delete" << endl;
         }
         children.erase(children.begin(), children.end());
     }
@@ -105,7 +104,10 @@ void Directory::addFile(BaseFile* file){ // Add the file to children
     bool shouldInsert = true;
     for(vector<BaseFile*>::iterator it = children.begin(); it < children.end();it++){
         if((*it)->getName().compare((*file).getName()) == 0 ){
-            cout << "File already exists" << std::endl;
+            if (file->isDirectory(file))
+                cout << "The directory already exists" << std::endl;
+            else
+                cout << "The file already exists" << std::endl;
             shouldInsert = false;
         }
     }
@@ -245,12 +247,12 @@ Directory* Directory::getDirectory(string path) {
         if ('/' == *it && fag){//end sequence of /.../
             fag = false;
             if(directory.length() == 0) {//first check if there is a statement between the /
-                std::cout << "path not valid" << endl;
+                std::cout << "The system cannot find the path specified" << std::endl;
                 return nullptr;
             }
             if( directory.length() == 2 && directory[0] == '.' && directory[1] == '.' ) {//next check if there's dots that means we need to go up
                 if (this->getParent() == nullptr) {
-                    std::cout << "path not valid" << endl;
+                    std::cout <<"The system cannot find the path specified" << endl;
                     return nullptr;
                 }
                 path = path.substr(location+1,path.length());
@@ -269,7 +271,7 @@ Directory* Directory::getDirectory(string path) {
                 return nullptr;
             i = getChild(directory);//looking for /".."/ directory
             if (i == - 1 ) {//-1 if we haven't found a directory resembling the name given
-                std::cout << "path not valid" << endl;
+                std::cout << "The system cannot find the path specified" << endl;
                 return nullptr;
             } else {
                 /* if path was /dir1/dir2 and this directory is /
@@ -291,7 +293,7 @@ Directory* Directory::getDirectory(string path) {
         return  static_cast<Directory *>(children[i]);
     if(i == -1 && directory.compare("..") == 0 )
         return this->getParent();
-    if(i== -1 && directory.compare(".") == 0)
+    if(i== -1 && (directory.compare(".") == 0 || path.compare("/") == 0))
         return this;
     else
         return nullptr;

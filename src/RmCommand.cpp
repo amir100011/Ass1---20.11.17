@@ -12,11 +12,14 @@ RmCommand::RmCommand(string args) : BaseCommand(args){};
 void RmCommand::execute(FileSystem & fs) {
 
     string path = this->getArgs();
+    path = path.substr(path.find_first_not_of(" "), path.find_last_not_of(" ") + 1);//space cutter
 
     Directory *lastDir = &fs.getWorkingDirectory();
 
-    if (path[0] == '/' && path.size() == 1)
-        cout << "can't remove Root directory" << std::endl;
+    if (path[0] == '/' && path.size() == 1) {
+        cout << "can't remove directory" << std::endl;
+        return;
+    }
     else
         lastDir = jumpToNewWorkingDirectory(fs, path);
 
@@ -39,19 +42,19 @@ void RmCommand::execute(FileSystem & fs) {
                     if (okToDelete) {
                         (lastDir)->removeFile(X);
                         found = true;
-                    } else {
-                        cout << "working directory is in the subtree of the path can't delete" << std::endl;
+                    } else {//working directory is in the subtree of the path can't delete
+                        cout << "Can’t remove the working directory" << std::endl;
                         found = true;
                     }
                 }
             }
         }
             if (!found)
-                cout << "File/Directory not found in specified path" << std::endl;
+                cout << "No such file or directory" << std::endl;
         //}
     }
     else if (lastDir != nullptr)
-        cout << "File/Directory not found in specified path" << std::endl;
+        cout << "No such file or directory" << std::endl;
 
 }
 

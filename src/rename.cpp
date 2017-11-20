@@ -13,8 +13,10 @@ void RenameCommand::execute(FileSystem & fs) {
 
     string Command = this->getArgs();
     int length = Command.size();
+    Command = Command.substr(Command.find_first_not_of(" "),Command.find_last_not_of(" ") + 1);//space cutter
     std::size_t pathIndex = Command.find(" ");//return index of the letter after " " in command
     string newName = Command.substr(pathIndex + 1, length);//from start of path to the end of string
+    newName = newName.substr(newName.find_first_not_of(" "),newName.find_last_not_of(" ") + 1);//space cutter
     pathIndex = Command.find(" ");
     string path = Command.substr(0, pathIndex); //the path
 
@@ -50,10 +52,10 @@ void RenameCommand::execute(FileSystem & fs) {
                       }
                   }
                   if (!found)
-                      cout << "File/Directory not found in specified path" << std::endl;
+                      cout << "No such file or directory" << std::endl;
               }
     else if (lastDir != nullptr)
-              cout << "File/Directory not found in specified path" << std::endl;
+              cout << "No such file or directory" << std::endl;
           }
    // }
 string RenameCommand::toString(){

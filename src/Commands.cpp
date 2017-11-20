@@ -40,6 +40,7 @@ void MakeDir(string path,Directory* Point){//we can assume that path is a Relati
             return;
         }
             Directory *newDir = new Directory(path, Point);
+            directory = newDir->getName();
             newDir = nullptr;
             return;
 
@@ -119,7 +120,7 @@ void LsCommand::execute(FileSystem &fs) {
         }//Relative path
         WorkDir = WorkDir->getDirectory(Command);
         if(WorkDir==nullptr) {
-            cout << "path not valid"<< endl;
+            cout << "The system cannot find the path specified"<< endl;
             return;
         }
     }else WorkDir = &fs.getWorkingDirectory();//there isn't a path ls is activated on Working Direcotry
@@ -197,6 +198,10 @@ void MkfileCommand::execute(FileSystem &fs) {
     loc = path.find_last_of("/");
     if(loc == -1){///Make file in this Directory
         WorkDir = &fs.getWorkingDirectory();
+        if (WorkDir->getChild(path) != -1){//ckecks if file exists
+            cout << "File already exists" << std::endl;
+            return;
+        }
         try {
             newFile= new File(path, std::stoi(Size));
         }catch(std::invalid_argument&){    cout << "Invalid Command please enter a valid size integer "<<endl;return; }
@@ -217,6 +222,10 @@ void MkfileCommand::execute(FileSystem &fs) {
     if(WorkDir == nullptr){
         std::cout << "The system cannot find the path specified" << endl;
         return;
+        if (WorkDir->getChild(path) != -1){//ckecks if file exists
+            cout << "File already exists" << std::endl;
+            return;
+        }
     }
     try {
         newFile = new File(FileName, std::stoi(Size));
@@ -413,9 +422,9 @@ string ErrorCommand::toString() {return "Error Command";}
 
 void ErrorCommand::execute(FileSystem &fs) {
     string A = this->getArgs();
-    unsigned long first = A.find_first_not_of(" ",0);
-    unsigned long  second =A.find_first_not_of(" ",first);
-    if((int)second != -1)
-        A = A.substr(first,second);
-    cout << A << endl;
+   // unsigned long first = A.find_first_not_of(" ",0);
+    //unsigned long  second =A.find_first_not_of(" ",first);
+   // if//((int)second != -1)
+       // A = A.substr(first,second);
+    cout << A  + ":Unknown command " << endl;
 }

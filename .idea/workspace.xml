@@ -12,21 +12,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3349739b-dfef-4d8f-abff-f88edb0a60a1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Output.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exampleIn1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exampleIn2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exampleIn3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exampleOut1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exampleOut2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exampleOut3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Commands.o" afterPath="$PROJECT_DIR$/bin/Commands.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Directory.o" afterPath="$PROJECT_DIR$/bin/Directory.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Environment.o" afterPath="$PROJECT_DIR$/bin/Environment.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/HistoryCommand.o" afterPath="$PROJECT_DIR$/bin/HistoryCommand.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/RmCommand.o" afterPath="$PROJECT_DIR$/bin/RmCommand.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/fs" afterPath="$PROJECT_DIR$/bin/fs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/generalFunctions.o" afterPath="$PROJECT_DIR$/bin/generalFunctions.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rename.o" afterPath="$PROJECT_DIR$/bin/rename.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Ass1" afterPath="$PROJECT_DIR$/cmake-build-debug/Ass1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Commands.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Commands.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Directory.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Directory.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Environment.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/Environment.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/HistoryCommand.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/generalFunctions.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/RmCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/RmCommand.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/rename.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ass1.dir/src/rename.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Files.h" afterPath="$PROJECT_DIR$/include/Files.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/generalFunctions.h" afterPath="$PROJECT_DIR$/include/generalFunctions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Commands.cpp" afterPath="$PROJECT_DIR$/src/Commands.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Directory.cpp" afterPath="$PROJECT_DIR$/src/Directory.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Environment.cpp" afterPath="$PROJECT_DIR$/src/Environment.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/generalFunctions.cpp" afterPath="$PROJECT_DIR$/src/generalFunctions.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HistoryCommand.cpp" afterPath="$PROJECT_DIR$/src/HistoryCommand.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RmCommand.cpp" afterPath="$PROJECT_DIR$/src/RmCommand.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rename.cpp" afterPath="$PROJECT_DIR$/src/rename.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Environment.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Environment.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Environment.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="108" column="60" lean-forward="false" selection-start-line="108" selection-start-column="60" selection-end-line="108" selection-end-column="60" />
               <folding>
                 <element signature="e#39#74#0" expanded="true" />
               </folding>
@@ -50,23 +63,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generalFunctions.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/generalFunctions.cpp">
+      <file leaf-file-name="Commands.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Commands.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-              <folding>
-                <element signature="e#39#79#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="287">
+              <caret line="117" column="31" lean-forward="false" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RmCommand.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RmCommand.cpp">
+      <file leaf-file-name="HistoryCommand.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HistoryCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="105">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,8 +86,28 @@
       <file leaf-file-name="Directory.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Directory.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="332" column="0" lean-forward="false" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="366" column="0" lean-forward="true" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RmCommand.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/RmCommand.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rename.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rename.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -109,6 +140,9 @@
       <find>isValid</find>
       <find>brokenpath.~</find>
       <find>pathValidation</find>
+      <find>path not</find>
+      <find>ver</find>
+      <find>ls c</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,16 +167,16 @@
         <option value="$PROJECT_DIR$/src/BaseCommand.cpp" />
         <option value="$PROJECT_DIR$/include/Commands.h" />
         <option value="$PROJECT_DIR$/src/FileSystem.cpp" />
-        <option value="$PROJECT_DIR$/src/rename.cpp" />
-        <option value="$PROJECT_DIR$/src/RmCommand.cpp" />
         <option value="$PROJECT_DIR$/src/exeCommand.cpp" />
-        <option value="$PROJECT_DIR$/src/HistoryCommand.cpp" />
-        <option value="$PROJECT_DIR$/src/Commands.cpp" />
         <option value="$PROJECT_DIR$/include/generalFunctions.h" />
-        <option value="$PROJECT_DIR$/src/Directory.cpp" />
         <option value="$PROJECT_DIR$/include/Files.h" />
         <option value="$PROJECT_DIR$/src/generalFunctions.cpp" />
+        <option value="$PROJECT_DIR$/src/rename.cpp" />
+        <option value="$PROJECT_DIR$/src/RmCommand.cpp" />
+        <option value="$PROJECT_DIR$/src/Commands.cpp" />
+        <option value="$PROJECT_DIR$/src/HistoryCommand.cpp" />
         <option value="$PROJECT_DIR$/src/Environment.cpp" />
+        <option value="$PROJECT_DIR$/src/Directory.cpp" />
       </list>
     </option>
   </component>
@@ -249,7 +283,8 @@
       <workItem from="1510911637513" duration="4790000" />
       <workItem from="1510930491058" duration="36753000" />
       <workItem from="1511086341260" duration="20989000" />
-      <workItem from="1511110238189" duration="8380000" />
+      <workItem from="1511110238189" duration="8427000" />
+      <workItem from="1511198430006" duration="7171000" />
     </task>
     <task id="LOCAL-00001" summary="Second ago">
       <created>1511100038144</created>
@@ -272,22 +307,29 @@
       <option name="project" value="LOCAL" />
       <updated>1511114761037</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="no warnings + no mem leaks">
+      <created>1511118661553</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511118661553</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201873000" />
+    <option name="totallyTimeSpent" value="209091000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="-4" width="1297" height="780" extended-state="6" />
+    <frame x="65" y="-4" width="1295" height="772" extended-state="6" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18841699" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3168168" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26726726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42792794" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42792794" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -312,7 +354,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Second ago" />
     <MESSAGE value="no warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="no warnings" />
+    <MESSAGE value="no warnings + no mem leaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="no warnings + no mem leaks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -339,12 +382,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/RmCommand.cpp</url>
-          <line>33</line>
+          <line>36</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/Directory.cpp</url>
-          <line>332</line>
+          <line>334</line>
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -357,8 +400,13 @@
           <line>41</line>
           <option name="timeStamp" value="139" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/RmCommand.cpp</url>
+          <line>16</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="140" />
+      <option name="time" value="141" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -535,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,9 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#37#69#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,19 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rename.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Files.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,25 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#38#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HistoryCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Commands.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="367" column="41" lean-forward="true" selection-start-line="367" selection-start-column="41" selection-end-line="367" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="423" column="0" lean-forward="false" selection-start-line="423" selection-start-column="0" selection-end-line="423" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,15 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RmCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,17 +733,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Directory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="332" column="0" lean-forward="false" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/generalFunctions.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="576">
           <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding>
             <element signature="e#39#79#0" expanded="true" />
@@ -749,13 +743,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/HistoryCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rename.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Environment.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        <state relative-caret-position="280">
+          <caret line="108" column="60" lean-forward="false" selection-start-line="108" selection-start-column="60" selection-end-line="108" selection-end-column="60" />
           <folding>
             <element signature="e#39#74#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="117" column="31" lean-forward="false" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Directory.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="366" column="0" lean-forward="true" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RmCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
